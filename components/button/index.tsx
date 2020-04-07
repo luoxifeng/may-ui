@@ -14,7 +14,8 @@ export default ({
   text,
   html,
   size = 'nomarl',
-  type
+  type = 'default',
+  onClick
 }: Partial<IProps>) => {
   const btnClses = [];
   type && btnClses.push(`btn-${type}`);
@@ -31,6 +32,7 @@ export default ({
     <button
       type="button"
       className={cls('btn-default', btnClses.join(' '))}
+      onClick={onClick}
     >
       {btn}
     </button>
