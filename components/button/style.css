@@ -1,0 +1,22 @@
+.btn-default {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+  user-select: none;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+
+
