@@ -1,0 +1,23 @@
+{
+  "name": "may-ui",
+  "version": "0.0.1",
+  "description": "react components lib",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoxifeng/may-ui.git"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luoxifeng/may-ui/issues"
+  },
+  "homepage": "https://github.com/luoxifeng/may-ui#readme"
+}
