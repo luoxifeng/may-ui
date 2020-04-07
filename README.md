@@ -1,3 +1,3 @@
 # may-ui
 
-react components lib
+ React UI library
