@@ -1,17 +1,13 @@
 // import R from 'ramda';
-import { resolve } from 'path';
+const { resolve } = require('path');
 
-/**
- *
- */
-export const resolvableExtensions = () => {
-  return ['.js', '.jsx', '.ts', '.tsx'];
-};
+const _ = module.exports;
 
 /**
  * @param {*} args
+ * 注入 webpack 配置
  */
-export const onCreateWebpackConfig = ({ actions }) => {
+_.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       // ⚠ Note the '..' in the path because the docz gatsby project lives in the `.docz` directory
