@@ -52,6 +52,19 @@ const eslintConfig = {
     // 不强制箭头函数体{} 的使用限制
     "arrow-body-style": 0,
 
+    // 不强制逗号的使用
+    "comma-dangle": 0,
+
+    // 允许单参数箭头函数，不使用()
+    "arrow-parens": 0,
+
+    /**
+     * import 相关
+     */
+    "import/no-extraneous-dependencies": 0,
+
+    "import/prefer-default-export": 0,
+
     /**
      * react 配置相关
      */

@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default () => {
-  return <div>1111</div>;
-}
+  return <div>11222211</div>;
+};
