@@ -8,6 +8,7 @@ import {
   useConfig,
   ComponentsProvider
 } from 'docz';
+// import Preview from 'site/Preview';
 // import DefaultTheme from 'gatsby-theme-docz/src';
 // import * as R from 'ramda';
 
@@ -24,8 +25,7 @@ const DoczDefaultTheme = ({ children }) => {
   )
 };
 
-const MyTheme = ({ children }) => {
-
+const Preview = ({ children }) => {
   return (
     <div>
       {children}
@@ -69,10 +69,8 @@ const SwitchTheme = ({ children }) => {
   const currentDoc = useCurrentDoc() || {};
   const { route = '' } = currentDoc;
 
-  console.log(currentDoc);
-
   if (route.startsWith('/demo')) {
-    return <MyTheme children={children} />;
+    return <Preview children={children} route={route}/>;
   }
 
   return <DoczDefaultTheme children={children} />;

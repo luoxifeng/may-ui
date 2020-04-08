@@ -7,16 +7,12 @@ type IProps = PropsWithChildren<{
 
 export default class Phone extends Component<IProps> {
 
-  static defaultProps = {
-    url: '/demo/button'
-  };
-
   public render() {
-    const { url } = this.props;
+    const { url = '/' } = this.props;
 
     return (
       <div className="phone-wrapper">
-        <iframe src={url} frameBorder="0" title="phone" />
+        <iframe src={`${url}?from=phone`} frameBorder="0" title="phone" />
       </div>
     );
   }
