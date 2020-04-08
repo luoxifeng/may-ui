@@ -5,7 +5,7 @@ import './style.css';
 interface IProps {
   text: string;
   html: string;
-  size: 'large' | 'nomarl' | 'small';
+  size: mayui.Size;
   type: string;
   onClick(e?: SyntheticEvent): void;
 }
@@ -13,7 +13,7 @@ interface IProps {
 export default ({
   text,
   html,
-  size = 'nomarl',
+  size = 'normal',
   type = 'default',
   onClick
 }: Partial<IProps>) => {
