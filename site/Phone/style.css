@@ -1,0 +1,10 @@
+.phone-wrapper {
+  width: 375px;
+  height: 667px;
+}
+
+.phone-wrapper iframe {
+  height: 100%;
+  width: 100%;
+}
+
