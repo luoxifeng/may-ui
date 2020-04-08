@@ -12,7 +12,8 @@ _.onCreateWebpackConfig = ({ actions }) => {
     resolve: {
       modules: ['node_modules'],
       alias: {
-        'may-ui': resolve(__dirname, '../components')
+        'may-ui': resolve(__dirname, '../components'),
+        site: resolve(__dirname, '../site')
       }
     }
   });

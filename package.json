@@ -6,7 +6,8 @@
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz:serve": "docz build && docz serve",
+    "dev": "docz dev"
   },
   "repository": {
     "type": "git",

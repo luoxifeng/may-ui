@@ -60,6 +60,12 @@ const eslintConfig = {
       { allowShortCircuit: true, allowTernary: true }
     ],
 
+    // 允许实例方法里面不使用 this 关键字
+    "class-methods-use-this": 0,
+
+    // 允许块级代码开头以及结尾出现空行
+    "padded-blocks": 0,
+
     /**
      * import 相关
      */
@@ -82,7 +88,10 @@ const eslintConfig = {
     ],
 
     // 允许 jsx 使用 dangerouslySetInnerHTML
-    "react/no-danger": 0
+    "react/no-danger": 0,
+
+    // 允许 react 类组件在只有 render 函数的时候使用类组件
+    "react/prefer-stateless-function": 0
 
   },
   globals: {}
