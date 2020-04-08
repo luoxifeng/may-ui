@@ -69,7 +69,7 @@ const SwitchTheme = ({ children }) => {
   const currentDoc = useCurrentDoc() || {};
   const { route = '' } = currentDoc;
 
-  if (route.startsWith('/demo')) {
+  if (route.startsWith('/preview')) {
     return <Preview children={children} route={route}/>;
   }
 
