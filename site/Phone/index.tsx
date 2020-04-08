@@ -9,11 +9,15 @@ export default class Phone extends Component<IProps> {
 
   public render() {
     const { url = '/' } = this.props;
-    console.log(url, '+++++')
+    console.log(url, '+++++');
 
     return (
       <div className="phone-wrapper">
-        <iframe src={`${url}`} frameBorder="0" title="phone" />
+        <div className="phone-bangs" />
+        <div className="phone-inner">
+          <iframe src={`${url}`} frameBorder="0" title="phone" />
+        </div>
+        <div className="phone-bar" />
       </div>
     );
   }
