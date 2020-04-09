@@ -9,6 +9,12 @@ const _ = module.exports;
  */
 _.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
+    // rules: [
+    //   {
+    //     test: /\.mdx?$/,
+    //     use: ['babel-loader', '@mdx-js/loader']
+    //   }
+    // ],
     resolve: {
       modules: ['node_modules'],
       alias: {

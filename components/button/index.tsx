@@ -38,3 +38,10 @@ export default ({
     </button>
   );
 };
+
+
+export function HH(fus) {
+  document.querySelector('body').classList.add('1111');
+
+  return null;
+}
