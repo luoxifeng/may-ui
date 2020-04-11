@@ -15,11 +15,14 @@ import {
 /* eslint-disable */
 
 const DoczDefaultTheme = ({ children }) => {
-  const config = useConfig()
+  const config = useConfig();
+  console.log(components);
   return (
     <ThemeProvider theme={config.themeConfig}>
       <ComponentsProvider components={components}>
-        <Styled.root>{children}</Styled.root>
+        <Styled.root>
+          {children}
+        </Styled.root>
       </ComponentsProvider>
     </ThemeProvider>
   )
@@ -51,8 +54,10 @@ function theme(themeConfig, transform = c => c) {
       return (
         <doczState.Provider initial={initial}>
           <WrappedComponent>
+            <div>444555555</div>
             {children}
           </WrappedComponent>
+          
         </doczState.Provider>
       )
 
