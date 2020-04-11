@@ -17,6 +17,7 @@ import {
 const DoczDefaultTheme = ({ children }) => {
   const config = useConfig();
   console.log(components);
+// components.layout = (props) => <div>{props.children}</div>
   return (
     <ThemeProvider theme={config.themeConfig}>
       <ComponentsProvider components={components}>
@@ -54,10 +55,8 @@ function theme(themeConfig, transform = c => c) {
       return (
         <doczState.Provider initial={initial}>
           <WrappedComponent>
-            <div>444555555</div>
             {children}
           </WrappedComponent>
-          
         </doczState.Provider>
       )
 
