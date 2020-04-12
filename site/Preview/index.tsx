@@ -1,6 +1,14 @@
-import React from "react";
+import React, { PropsWithChildren } from 'react';
+import './style.css';
 
-export default ({ children, route }) => {
-  if (route.in)
+type IProps = PropsWithChildren<{
+  url: string;
+}>;
 
-}
+export const Preview = ({ children }: IProps) => {
+  return (
+    <div className="preview-container">
+      {children}
+    </div>
+  );
+};

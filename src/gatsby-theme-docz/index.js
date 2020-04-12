@@ -11,6 +11,7 @@ import {
   ComponentsProvider
 } from 'docz';
 import { Layout } from 'site/Layout';
+import { Preview } from 'site/Preview';
 // import Preview from 'site/Preview';
 // import DefaultTheme from 'gatsby-theme-docz/src';
 // import * as R from 'ramda';
@@ -31,15 +32,6 @@ const DoczDefaultTheme = ({ children }) => {
     </ThemeProvider>
   )
 };
-
-const Preview = ({ children }) => {
-  return (
-    <div>
-      {children}
-    </div>
-  );
-};
-
 
 function theme(themeConfig, transform = c => c) {
   return WrappedComponent => {
