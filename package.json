@@ -4,6 +4,7 @@
   "description": "react components lib",
   "main": "index.js",
   "scripts": {
+    "transform": "node ./transform.js",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
@@ -28,6 +29,7 @@
     "@types/ramda": "^0.27.3",
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
+    "@types/webpack": "^4.41.10",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-eslint": "^10.1.0",
@@ -43,6 +45,7 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-typescript": "^2.3.1",
+    "globby": "^11.0.0",
     "node-sass": "^4.13.1",
     "ramda": "^0.27.0",
     "react": "^16.13.1",

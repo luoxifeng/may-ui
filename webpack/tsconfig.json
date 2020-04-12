@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "Commonjs",
     "baseUrl": "./",
     "paths": {
       "may-ui": ["components/index.tsx"],
@@ -13,11 +14,10 @@
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "noImplicitAny": true,
-    "target": "es6",
+    "target": "es5",
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true 
+    "strict": true
   },
   "exclude": ["node_modules", "lib", "es"]
 }
