@@ -1,7 +1,6 @@
 .phone-wrapper {
   position: relative;
   width: 395px;
-  box-shadow: 0 0 10px 5px rgba(49, 49, 49, 0.63);
   border-radius: 40px;
 }
 
@@ -10,6 +9,8 @@
   height: 812px;
   border: 10px solid #000;
   border-radius: 40px;
+  position: fixed;
+  box-shadow: 0 0 10px 5px rgba(49, 49, 49, 0.63);
 }
 
 .phone-inner iframe {

@@ -1,3 +1,5 @@
+
+/* eslint-disable */
 import React from 'react';
 import { Styled, ThemeProvider } from 'theme-ui';
 import defaultTheme from 'gatsby-theme-docz/src/theme';
@@ -8,16 +10,17 @@ import {
   useConfig,
   ComponentsProvider
 } from 'docz';
+import { Layout } from 'site/Layout';
 // import Preview from 'site/Preview';
 // import DefaultTheme from 'gatsby-theme-docz/src';
 // import * as R from 'ramda';
 
-/* eslint-disable */
 
 const DoczDefaultTheme = ({ children }) => {
   const config = useConfig();
   console.log(components);
-// components.layout = (props) => <div>{props.children}</div>
+  components.layout = Layout;
+
   return (
     <ThemeProvider theme={config.themeConfig}>
       <ComponentsProvider components={components}>

@@ -73,6 +73,16 @@ const eslintConfig = {
 
     'import/prefer-default-export': 0,
 
+    "import/extensions": [2,
+      {
+        js: "never",
+        ts: "never",
+        jsx: "never",
+        tsx: "never",
+        json: "always"
+      }
+    ],
+
     /**
      * react 配置相关
      */
