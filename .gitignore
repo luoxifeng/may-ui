@@ -109,4 +109,4 @@ dist
 .docz/public
 .docz/src
 _site
-
+.preview
