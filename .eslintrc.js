@@ -66,6 +66,12 @@ const eslintConfig = {
     // 允许块级代码开头以及结尾出现空行
     "padded-blocks": 0,
 
+    // 允许不具名函数
+    "func-names": 0,
+
+    // 不强制使用点号取对象属性
+    "dot-notation": 0,
+
     /**
      * import 相关
      */

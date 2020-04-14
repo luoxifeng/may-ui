@@ -31,7 +31,7 @@ module.exports = (ast = {}, options = defaultOpts) => {
 
       const newNode = transform(node);
       if (newNode) {
-        children.push(node);
+        children.push(newNode);
       }
     });
   }
@@ -40,4 +40,4 @@ module.exports = (ast = {}, options = defaultOpts) => {
     ...ast,
     children
   };
-}
+};
