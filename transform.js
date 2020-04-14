@@ -51,7 +51,7 @@ const removeIsNotRoute = node => {
     // console.log(newAst)
     const newContent = compiler.stringify(newAst);
 
-    const targetPath = abPath.replace(/components/, '.preview');
+    const targetPath = abPath.replace(/components/, 'preview');
     await fs.ensureFile(targetPath);
     return fs.writeFile(targetPath, newContent);
   });

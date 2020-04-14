@@ -72,7 +72,7 @@ const SwitchTheme = ({ children }) => {
     return <Preview children={children} route={route}/>;
   }
 
-  return <DoczDefaultTheme children={children} />;
+  return <DoczDefaultTheme children={children} route={route} />;
 }
 
 export default theme(defaultTheme)(SwitchTheme);

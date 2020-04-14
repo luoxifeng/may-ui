@@ -4,12 +4,12 @@
   "description": "react components lib",
   "main": "index.js",
   "scripts": {
-    "clear:preview": "rm -d -rf .preview",
+    "clear:preview": "rm -d -rf preview",
     "transform": "npm run clear:preview && node ./transform.js",
-    "docz:dev": "docz dev",
+    "docz:dev": "npm run transform && docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "dev": "docz dev"
+    "dev": "npm run transform && docz dev"
   },
   "repository": {
     "type": "git",

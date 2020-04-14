@@ -1,6 +1,6 @@
 // import R from 'ramda';
 const { resolve } = require('path');
-const Demo = require('../webpack/demo');
+// const Demo = require('../webpack/demo');
 
 const _ = module.exports;
 
@@ -11,15 +11,15 @@ const _ = module.exports;
  */
 _.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          enforce: "pre",
-          test: /\.mdx?$/,
-          use: [resolve(__dirname, '../ss')]
-        }
-      ],
-    },
+    // module: {
+    //   rules: [
+    //     {
+    //       enforce: "pre",
+    //       test: /\.mdx?$/,
+    //       use: [resolve(__dirname, '../ss')]
+    //     }
+    //   ],
+    // },
     resolve: {
       modules: ['node_modules'],
       alias: {
@@ -28,7 +28,6 @@ _.onCreateWebpackConfig = ({ actions }) => {
       }
     },
     plugins: [
-      new Demo()
     ]
   });
 };
