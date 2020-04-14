@@ -5,3 +5,7 @@
 .preview-container pre {
   display: none;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}

@@ -6,6 +6,7 @@ type IProps = PropsWithChildren<{
 }>;
 
 export const Preview = ({ children }: IProps) => {
+  document.documentElement.classList.add('no-scrollbar');
   return (
     <div className="preview-container">
       {children}
