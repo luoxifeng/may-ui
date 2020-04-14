@@ -4,7 +4,8 @@
   "description": "react components lib",
   "main": "index.js",
   "scripts": {
-    "transform": "node ./transform.js",
+    "clear:preview": "rm -d -r .preview",
+    "transform": "npm run clear:preview && node ./transform.js",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
